@@ -21,7 +21,7 @@ export class CartComponent {
     private formBuilder: FormBuilder
   ) {}
 
-  onSubimt(): void {
+  onSubmit(): void {
     this.items = this.cartService.clearCart();
     console.warn('Your order has been submitted', this.checkoutForm.value);
     this.checkoutForm.reset();
